@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+// add imports
+const CopyPlugin = require('copy-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -8,6 +11,14 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new WriteFilePlugin(),
+    new CopyPlugin([
+      {
+          from: 'models/',
+          to: 'models/',
+          context: 'src/',
+      },
+      ]),
     new HtmlWebpackPlugin({
       title: 'This is something',
       meta: {
@@ -25,6 +36,7 @@ module.exports = {
       chunks: 'all'
     }
   },
+  
   module: {
     rules: [
       {

@@ -1,13 +1,15 @@
 import * as THREE from 'three-full';
 
+
+
 const bgeometry = new THREE.BoxGeometry(10, 20, 30);
-const bmaterial = new THREE.MeshLambertMaterial({ color: 0x0000ab });
+const bmaterial = new THREE.MeshBasicMaterial({ color: 0x0000ab, wireframe: true });
 const box = new THREE.Mesh(bgeometry, bmaterial);
 
-const texture = new THREE.TextureLoader().load('´pictures/earth_atmos_2048.jpg');
-const normal = new THREE.TextureLoader().load('pictures/earth_normal_2048.jpg');
-const bump = new THREE.TextureLoader().load('pictures/earth_bump.jpg');
-const specular = new THREE.TextureLoader().load('pictures/earth_specular_2048.jpg');
+const texture = new THREE.TextureLoader().load('models/pictures/earth_atmos_2048.jpg');
+const normal = new THREE.TextureLoader().load('models/pictures/earth_normal_2048.jpg');
+const bump = new THREE.TextureLoader().load('models/pictures/earth_bump.jpg');
+const specular = new THREE.TextureLoader().load('models/pictures/earth_specular_2048.jpg');
 
 
 

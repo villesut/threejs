@@ -1,0 +1,208 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 3900,
+            "max" : [
+                2601
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2602,
+            "max" : [
+                4.710606098175049,
+                1.8535771369934082,
+                2.9200708866119385
+            ],
+            "min" : [
+                -1.5601232051849365,
+                -2.1755764484405518,
+                -2.897481918334961
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2602,
+            "max" : [
+                1.0,
+                0.9997331500053406,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -0.9998800158500671,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 2602,
+            "max" : [
+                0.9999622106552124,
+                0.9999775290489197,
+                0.9999090433120728,
+                1.0
+            ],
+            "min" : [
+                -0.999332070350647,
+                -0.999902606010437,
+                -0.9999498724937439,
+                1.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2602,
+            "max" : [
+                0.992013156414032,
+                0.9920062329620123
+            ],
+            "min" : [
+                0.007986839860677719,
+                0.007993757724761963
+            ],
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 2602,
+            "max" : [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min" : [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2602,
+            "max" : [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min" : [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type" : "VEC4"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 7800,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31224,
+            "byteOffset" : 7800,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31224,
+            "byteOffset" : 39024,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 41632,
+            "byteOffset" : 70248,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20816,
+            "byteOffset" : 111880,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20816,
+            "byteOffset" : 132696,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 41632,
+            "byteOffset" : 153512,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 195144,
+            "uri" : "crab.bin"
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "JOINTS_0" : 5,
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TANGENT" : 3,
+                        "TEXCOORD_0" : 4,
+                        "WEIGHTS_0" : 6
+                    },
+                    "indices" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube",
+            "scale" : [
+                1.820722222328186,
+                1.1514043807983398,
+                1.820722222328186
+            ]
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ]
+}

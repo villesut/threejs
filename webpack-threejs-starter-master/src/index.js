@@ -1,31 +1,34 @@
-import * as THREE from 'three';
+import * as THREE from 'three-full';
 import * as OrbitControls from 'three-orbitcontrols';
 
-
-
+import {newLight, light, ambientLight} from './lights.js';
+import {sphere, box} from './geometry.js';
 // create a scene
+
+const bcolor = new THREE.Color( 0xFFFFF);
+
 const scene = new THREE.Scene();
 
 // create a box
-const geometry = new THREE.BoxGeometry(10, 20, 30);
-const material = new THREE.MeshLambertMaterial({ color: 0x0000ab });
-const box = new THREE.Mesh(geometry, material);
+
 scene.add(box);
+scene.add(sphere);
 
+scene.background = bcolor;
 
-
-
+/*
 // add some light
 const light = new THREE.PointLight(0xffabba);
 light.position.set(10, 10, 35);
 light.intensity = 2;
 const ambiendLight = new THREE.AmbientLight(0xffffff, 1.0);
-scene.add(ambiendLight);
+*/
+scene.add(ambientLight);
 scene.add(light);
-
+scene.add(newLight);
 // create a camera and set position
-const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight), 0.1, 1000);
-camera.position.z = 100;
+const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight), 1, 1000);
+camera.position.set(400,200,0);
 
 
 
@@ -47,7 +50,7 @@ controls.maxDistance = 500;
 // set & start rendering the scene
 const render = () => {
   requestAnimationFrame(render);
-
+  box.rotation.x += 0.01;
   controls.update();
   renderer.render(scene, camera);
 };

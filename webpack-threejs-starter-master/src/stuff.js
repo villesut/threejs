@@ -9,6 +9,10 @@ document.getElementById("myBtnR").addEventListener("click", function(){
     rot += 0.02;
     console.log(rot);
   });
+  document.getElementById("myBtnRes").addEventListener("click", function(){
+    rot = 0;
+    console.log(rot);
+  });
   
 
   export{rot};

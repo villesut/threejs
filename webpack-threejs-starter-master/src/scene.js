@@ -11,11 +11,8 @@ loader.load('models/test.obj', function(object){
 });
 
 
-scene.add(box);
 
-scene.add(sphere);
-scene.add(ambientLight);
-scene.add(light);
+scene.add(box, sphere, ambientLight, light);
 
 
 export{scene};

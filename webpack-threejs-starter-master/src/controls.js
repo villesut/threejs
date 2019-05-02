@@ -15,7 +15,7 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.25;
 controls.screenSpacePanning = false;
 controls.minDistance = 10;
-controls.maxDistance = 500;
+controls.maxDistance = 380;
 
 
 export{controls, camera, renderer};

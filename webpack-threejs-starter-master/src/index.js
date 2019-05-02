@@ -8,16 +8,17 @@ const render = () => {
   box.rotation.x += 0.01;
   sphere.rotation.y += rot;
   clouds.rotation.y += (rot - 0.002);
+  moon.rotation.y -= rot;
   controls.update();
   renderer.render(scene, camera);
+//Kuun kierto
 
-  var time = Date.now() * 0.0005;
-	moon.position.x = Math.cos( time * 10 ) * 50;
-	moon.position.y = Math.cos( time * 7 ) * 30;
-	moon.position.z = Math.cos( time * 8 ) * 40;
-
-	// Animating sphere 2
-  pivotPoint.rotation.y += 0.05;
+  var orbitRadius = 210;
+  var date;
+  date = Date.now()*0.0005;
+  moon.position.set(
+    Math.cos(date) * orbitRadius, 5, Math.sin(date) * orbitRadius
+  );
 
 
 };

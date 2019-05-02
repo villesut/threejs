@@ -49,18 +49,19 @@ const material = new THREE.MeshPhongMaterial({
 
 });
 
+const moonTexture = new THREE.TextureLoader().load('models/pictures/2k_moon.jpg');
+
 const sphere = new THREE.Mesh(geometry, material);
 
 //moon
 const moonGeometry = new THREE.SphereGeometry(15,32,32);
 const moonMaterial = new THREE.MeshPhongMaterial({
-    color: 0x0000ab
+    specular: 0x333333,
+    shininess: 80,
+    map: moonTexture
 });
 
 const moon = new THREE.Mesh(moonGeometry, moonMaterial);
-const pivotPoint = new THREE.Object3D();
-sphere.add(pivotPoint);
-moon.position.set(250,4,6);
-pivotPoint.add(moon);
 
-export{pivotPoint, sphere, box, clouds, galaxy, moon};
+
+export{sphere, box, clouds, galaxy, moon};

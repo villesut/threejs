@@ -8,7 +8,8 @@ const scene = new THREE.Scene();
 
 const loader = new THREE.OBJLoader;
 loader.load('models/test.obj', function(object){
-    
+    object.position.setY(200);
+    object.scale.set(5,5,5);
     scene.add(object);
 });
 
